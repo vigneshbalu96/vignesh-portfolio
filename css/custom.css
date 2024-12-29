@@ -1,0 +1,171 @@
+.social-icons {
+    display: flex;
+    gap: 2rem;
+}
+
+.fa-github, .fa-twitter, .fa-linkedin {
+    color: #D43F52;
+}
+
+#send {
+    background: transparent;
+    border: 1px solid white;
+    padding: 1rem;
+}
+
+.view-more {
+    background: transparent !important;
+    border: 1px solid white !important;
+    padding: 1rem !important;
+}
+
+.view-more:hover {
+    background: #D43F52 !important;
+}
+
+#send:hover {
+    background: #D43F52 !important;
+}
+
+.view-more-button:hover {
+    background: #D43F52;
+    color: #000;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+/* Carousel styling */
+.testimonial-carousel {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-item {
+  min-width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+
+.testimonial-item p {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.testimonial-item h5 {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.testimonial-item h6 {
+  color: #888;
+  font-size: 14px;
+}
+
+/* Carousel controls */
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2em;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+    
+
+
+/* Modal styles */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+#testimonial {
+    padding: 0;
+    margin: 0;
+}
+
+#testimonialCarousel {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.testimonial-content {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #333;
+}

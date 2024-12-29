@@ -54,3 +54,36 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     });
 });
 
+
+// Get all the modal elements and the close button
+const modals = document.querySelectorAll('.modal-overlay');
+const viewMoreButtons = document.querySelectorAll('.view-more');
+const closeButtons = document.querySelectorAll('.close');
+
+// Function to open the modal
+viewMoreButtons.forEach(button => {
+    button.addEventListener('click', (event) => {
+        const targetModal = document.querySelector(button.getAttribute('data-target'));
+        targetModal.style.display = 'flex';
+    });
+});
+
+// Function to close the modal
+closeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        modals.forEach(modal => {
+            modal.style.display = 'none';
+        });
+    });
+});
+
+// Close the modal if the user clicks outside of it
+modals.forEach(modal => {
+    modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+
+
