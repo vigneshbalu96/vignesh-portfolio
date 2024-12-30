@@ -379,3 +379,11 @@ body {
     width: 100%;
   }
 
+  .black-text {
+    color: black;
+  }
+  
+  .no-center {
+    text-align: left !important;
+  }
+
